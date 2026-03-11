@@ -42,6 +42,16 @@ pipeline {
                 
             }
         }
+        stage('dependies install') {
+            steps {
+                script {
+                    sh """
+                       npm test
+                    """
+                }
+                
+            }
+        }
         stage('docker image') {
             steps {
                 script {
