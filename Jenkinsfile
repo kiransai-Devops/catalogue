@@ -42,7 +42,7 @@ pipeline {
                 
             }
         }
-        stage('dependies install') {
+        stage('testing') {
             steps {
                 script {
                     sh """
